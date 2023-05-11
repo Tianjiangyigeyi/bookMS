@@ -180,19 +180,15 @@ namespace bookMS
             if (textBox9.Text == "0")
             {
                 MessageBox.Show("借出失败, 库存不足");
+                return;
             }
 
             string sql = "";
             string cardno = "";
             if (textBox10.Text == "")
             {
-                //sql = $"select * from card where UID = '{UIDFromOwner}'";
-                //SqlDataReader objReader = SQLHelper.GetReader(sql);
-                //if (objReader.Read())
-                //{
-                //    cardno = objReader[0].ToString();
-                //}
                 MessageBox.Show("请输入借书证号");
+                return;
             }
             else
             {
@@ -210,7 +206,7 @@ namespace bookMS
             
             sql = $"update books set remain = remain-1 where no = {textBox5.Text}";
             SQLHelper.Update(sql);
-            sql = $"insert into record(cardno, bookname, borrowdate) values ({cardno},'{textBox7.Text}',CONVERT(varchar,GETDATE(),120) )";
+            sql = $"insert into record(cardno, bookname, borrowdate, bookno) values ({cardno},'{textBox7.Text}',CONVERT(varchar,GETDATE(),120), {textBox5.Text} )";
             SQLHelper.Update(sql);
             fresh_2();
             freshRecord();
@@ -271,7 +267,7 @@ namespace bookMS
                     SQLHelper.Update(sql2);
                     objReader = SQLHelper.GetReader(sql);
                     freshCard();
-                    MessageBox.Show("注册成功! 你的借书证号是: " + objReader[0].ToString());
+                    if(objReader.Read()) MessageBox.Show("注册成功! 你的借书证号是: " + objReader[0].ToString());
                     textBox14.Clear();
                     return;
                 }
@@ -331,6 +327,7 @@ namespace bookMS
             if (textBox10.Text == "")
             {
                 MessageBox.Show("请输入借书证号");
+                return;
             }
             else
             {
@@ -346,7 +343,7 @@ namespace bookMS
                 }
                 
             }
-            sql = $"update record set returndate = CONVERT(varchar,GETDATE(),120) where cardno = {cardno} and returndate is null";
+            sql = $"update record set returndate = CONVERT(varchar,GETDATE(),120) where cardno = {cardno} and returndate is null and bookno = {textBox5.Text}";
             int influenced = SQLHelper.Update(sql);
             sql = $"update books set remain = remain + {influenced} where no = {textBox5.Text}";
             SQLHelper.Update(sql);

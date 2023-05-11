@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -60,8 +62,22 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -74,22 +90,6 @@
             this.bookn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.borrowdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returndate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -116,7 +116,7 @@
             this.bookname,
             this.author,
             this.remain});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, 0);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -297,6 +297,22 @@
             this.tabPage2.Text = "借还书籍";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(88, 26);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(244, 25);
+            this.textBox10.TabIndex = 18;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(23, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 15);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "借书证";
+            // 
             // textBox9
             // 
             this.textBox9.Cursor = System.Windows.Forms.Cursors.Default;
@@ -439,6 +455,81 @@
             this.tabPage3.Text = "增加图书";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button7.Location = new System.Drawing.Point(121, 312);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(156, 68);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "添加";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(80, 231);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(244, 25);
+            this.textBox15.TabIndex = 18;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(31, 238);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(37, 15);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "库存";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(80, 180);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(244, 25);
+            this.textBox11.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(31, 187);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 15);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "作者";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(80, 124);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(244, 25);
+            this.textBox12.TabIndex = 14;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 131);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 15);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "书名";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(80, 70);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(244, 25);
+            this.textBox13.TabIndex = 12;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 77);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(37, 15);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "类别";
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.button9);
@@ -453,6 +544,48 @@
             this.tabPage4.Text = "借书证管理";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.Control;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("微软雅黑", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button9.Location = new System.Drawing.Point(212, 264);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(122, 72);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "注销借书证";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.Control;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Font = new System.Drawing.Font("微软雅黑", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button8.Location = new System.Drawing.Point(60, 264);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(122, 72);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "注册借书证";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(127, 164);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(165, 25);
+            this.textBox14.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(83, 171);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(31, 15);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "UID";
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.button6);
@@ -463,6 +596,17 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "退出登录";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Location = new System.Drawing.Point(129, 254);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(146, 69);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "退出";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
@@ -538,12 +682,14 @@
             this.cardno.HeaderText = "借书证号";
             this.cardno.MinimumWidth = 6;
             this.cardno.Name = "cardno";
+            this.cardno.ReadOnly = true;
             // 
             // name
             // 
             this.name.HeaderText = "UID";
             this.name.MinimumWidth = 6;
             this.name.Name = "name";
+            this.name.ReadOnly = true;
             // 
             // dataGridView3
             // 
@@ -575,168 +721,28 @@
             this.cardno1.HeaderText = "借书证号";
             this.cardno1.MinimumWidth = 6;
             this.cardno1.Name = "cardno1";
+            this.cardno1.ReadOnly = true;
             // 
             // bookn
             // 
             this.bookn.HeaderText = "书名";
             this.bookn.MinimumWidth = 6;
             this.bookn.Name = "bookn";
+            this.bookn.ReadOnly = true;
             // 
             // borrowdate
             // 
             this.borrowdate.HeaderText = "借书日期";
             this.borrowdate.MinimumWidth = 6;
             this.borrowdate.Name = "borrowdate";
+            this.borrowdate.ReadOnly = true;
             // 
             // returndate
             // 
             this.returndate.HeaderText = "还书日期";
             this.returndate.MinimumWidth = 6;
             this.returndate.Name = "returndate";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(88, 26);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(244, 25);
-            this.textBox10.TabIndex = 18;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(23, 33);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 15);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "借书证";
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(129, 254);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(146, 69);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "退出";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(80, 180);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(244, 25);
-            this.textBox11.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 187);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 15);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "作者";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(80, 124);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(244, 25);
-            this.textBox12.TabIndex = 14;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 131);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 15);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "书名";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(80, 70);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(244, 25);
-            this.textBox13.TabIndex = 12;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 77);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 15);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "类别";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(80, 231);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(244, 25);
-            this.textBox15.TabIndex = 18;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(31, 238);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(37, 15);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "库存";
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("微软雅黑", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(121, 312);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(156, 68);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "添加";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(83, 171);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(31, 15);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "UID";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(127, 164);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(165, 25);
-            this.textBox14.TabIndex = 1;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("微软雅黑", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(60, 264);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(122, 72);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "注册借书证";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("微软雅黑", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(212, 264);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(122, 72);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "注销借书证";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.returndate.ReadOnly = true;
             // 
             // manage
             // 

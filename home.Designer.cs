@@ -67,7 +67,6 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.cardno1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.borrowdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returndate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -485,7 +484,6 @@
             this.dataGridView3.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cardno1,
             this.bookn,
             this.borrowdate,
             this.returndate});
@@ -498,13 +496,6 @@
             this.dataGridView3.RowTemplate.Height = 27;
             this.dataGridView3.Size = new System.Drawing.Size(634, 425);
             this.dataGridView3.TabIndex = 6;
-            // 
-            // cardno1
-            // 
-            this.cardno1.HeaderText = "借书证号";
-            this.cardno1.MinimumWidth = 6;
-            this.cardno1.Name = "cardno1";
-            this.cardno1.ReadOnly = true;
             // 
             // bookn
             // 
@@ -580,10 +571,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cardno1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bookn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn borrowdate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn returndate;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox7;
@@ -600,5 +587,8 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bookn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn borrowdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn returndate;
     }
 }

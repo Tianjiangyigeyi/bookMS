@@ -11,19 +11,7 @@ namespace bookMS
     public class SQLHelper
     {
         public static string connectionString = "server=.;database=Library_db;user=sa;password=123456";
-        public static bool OpenSQL()
-        {
-            SqlConnection connection = new SqlConnection(connectionString);
-            try
-            {
-                connection.Open();
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
+
         /// <summary>
         /// 执行增删改操作
         /// </summary>
@@ -44,30 +32,6 @@ namespace bookMS
             {
                 //写入日志
                 throw new Exception(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-        /// <summary>
-        /// 获得单一结果查询
-        /// </summary>
-        /// <param name="sql"></param>
-        /// <returns></returns>
-        public static object GetSingleResult(string sql)
-        {
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand(sql, connection);
-            try
-            {
-                connection.Open();
-                return cmd.ExecuteScalar();
-            }
-            catch (Exception ex)
-            {
-                //写入日志
-                throw ex;
             }
             finally
             {
